@@ -1,7 +1,7 @@
 //base class
 class Animal {
     
-
+    //Absraction
     constructor(){
         if (this.constructor === Animal){
             throw new Error('Animal cannot be called or instantiated')
@@ -12,15 +12,16 @@ class Animal {
         console.log('Animal Eating')
     }
 
-    isAlive() {
-        return true;
+    //Polymorphism method
+    Kingdom() {
+        console.log('');
     }
 }
 
 
 /** 
- * OOPS Concept: Encapsulation
- * Closure is an example of encapsulation.
+ * OOPS Concept: Inheritance and Encapsulation
+ * Closure is an example of Inheritance and encapsulation.
  * It encapsulates the body of code together within the lexical scope.
  
 */
@@ -43,6 +44,10 @@ class Arthropoda extends Animal{
     getblood(){
         return this.blood;
     }
+
+    Kingdom() {
+        console.log('Arthropoda');
+    }
 }
 
 class Fish extends Animal{
@@ -62,6 +67,10 @@ class Fish extends Animal{
     getblood(){
         return this.blood;
     }
+
+    Kingdom(){
+        console.log('Fish');
+    }
 }
 
 class Amphibia extends Animal{
@@ -79,6 +88,10 @@ class Amphibia extends Animal{
 
     getblood(){
         return this.blood;
+    }
+
+    Kingdom(){
+        console.log('Amphibia');
     }
 
 }
@@ -100,6 +113,10 @@ class Reptiles extends Animal{
     getblood(){
         return this.blood;
     }
+
+    Kingdom(){
+        console.log('Reptiles');
+    }
 }
 
 class AVES extends Animal{
@@ -118,6 +135,10 @@ class AVES extends Animal{
 
     getblood(){
         return this.blood;
+    }
+
+    Kingdom(){
+        console.log('AVES');
     }
 }
 
@@ -140,6 +161,10 @@ class Mammals extends Animal{
         return this.blood;
     }
 
+    Kingdom(){
+        console.log('Mammals');
+    }
+
 }
 
 
@@ -147,4 +172,4 @@ class Mammals extends Animal{
 let cat = new Mammals();
 //setting the value of the parameter
 cat.setblood('cold');
-console.log(cat.getblood());
+cat.Kingdom();
