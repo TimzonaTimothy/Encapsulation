@@ -22,9 +22,9 @@ class Animal {
  * OOPS Concept: Encapsulation
  * Closure is an example of encapsulation.
  * It encapsulates the body of code together within the lexical scope.
- * 
-  
+ 
 */
+
 
 class Arthropoda extends Animal{
     
