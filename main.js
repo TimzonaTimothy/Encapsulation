@@ -144,7 +144,7 @@ class Mammals extends Animal{
 
 
 //setting the instance
-let m = new Mammals();
+let cat = new Mammals();
 //setting the value of the parameter
-m.setblood('cold');
-console.log(m.getblood());
+cat.setblood('cold');
+console.log(cat.getblood());
